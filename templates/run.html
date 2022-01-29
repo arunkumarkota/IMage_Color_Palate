@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Image Color Palate Identifier</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="./static/index.js" defer></script>
+    </head>
+
+    <body style="margin-top:5%" class="text-center">
+        <h1> Below Is The Color Pallet Of The Image Uploaded</h1>
+        <img class="imageSize" src={{img}} >
+        <div>
+            {% for i in range(imgColors|length) %}
+            <div class="box h3 mb-3 font-weight-normal" style="background-color:{{imgColors[i]}}">{{imgColors[i]}}</div>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>

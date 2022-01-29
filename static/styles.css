@@ -1,0 +1,11 @@
+.imageSize {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+.box {
+    width:200px;
+    height:200px;
+    display: inline-block;
+}

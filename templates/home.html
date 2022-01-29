@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Image Color Palate Identifier</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--  <script src="./static/app.js" defer></script>-->
+    </head>
+
+    <body style="margin-top:20%" class="text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Image Color Palate Identifier</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Upload new File (.jpg Images)</h1>
+        <form method=post  action = '/uploadDoc' enctype=multipart/form-data>
+          <input style="display: inline" type=file class="btn btn-primary" name=file>
+            <br>
+            <br>
+          <label for="quantity">Number of Palate (between 1 and 10):</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <br>
+            <br>
+          <input type=submit class="btn btn-primary" value=Upload>
+        </form>
+    </body>
+</html>
